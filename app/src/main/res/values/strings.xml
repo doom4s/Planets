@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">New Hope</string>
+    <string name="app_name">Planets</string>
     <string name="distanceFromEarth">Distance from Earth:</string>
     <string name="diameter">Diameter:</string>
     <string name="numberOfHumans">Number of humans:</string>
