@@ -9,6 +9,7 @@
         android:id="@+id/myPlanetImage"
         android:layout_alignParentTop="true"
         android:layout_margin="25dp"
+        android:contentDescription="@string/planetImage"
         android:layout_gravity="center_horizontal" />
     <View
         android:layout_width="match_parent"
@@ -43,6 +44,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_toRightOf="@+id/distanceFromEarthConst"
+        android:layout_toEndOf="@+id/distanceFromEarthConst"
         android:layout_marginLeft="25dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="25dp"

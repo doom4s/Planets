@@ -16,17 +16,18 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Why stay ?" />
+        android:text="@string/greetingText" />
     <Button
         android:layout_below="@+id/myText"
         android:layout_width="wrap_content"
-        android:text="Move on!"
+        android:text="@string/buttonText"
         android:id="@+id/moveButton"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_height="wrap_content" />
 
     <ImageView
+        android:contentDescription="@string/imageShootingStartDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"

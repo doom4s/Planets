@@ -5,4 +5,8 @@
     <string name="numberOfHumans">Number of humans:</string>
     <string name="numberOfRobots">Number of robots:</string>
     <string name="officialGreeting">Official greeting:</string>
+    <string name="buttonText">Move on!</string>
+    <string name="greetingText">Why stay ?</string>
+    <string name="imageShootingStartDesc">Shooting star</string>
+    <string name="planetImage">Planet image</string>
 </resources>
