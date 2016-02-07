@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">New Hope</string>
+    <string name="distanceFromEarth">Distance from Earth:</string>
+    <string name="diameter">Diameter:</string>
+    <string name="numberOfHumans">Number of humans:</string>
+    <string name="numberOfRobots">Number of robots:</string>
+    <string name="officialGreeting">Official greeting:</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/myPlanetImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myPlanetImage"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/planetNameText"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+        android:text="@string/distanceFromEarth"
+        android:textSize="15sp"
+        android:layout_below="@+id/planetNameText"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/distanceFromEarthConst" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/distanceFromEarthConst"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/planetNameText"
+        android:gravity="right"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/distance" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diameter"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/distanceFromEarthConst"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/diameterConst" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:layout_below="@+id/distance"
+        android:layout_toRightOf="@+id/diameterConst"
+        android:gravity="right"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/diameter" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diameterConst"
+        android:text="@string/numberOfHumans"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/numberOfHumansCons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/diameter"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/numberOfHumansCons"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/numberOfHumans" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/numberOfRobots"
+        android:textSize="15sp"
+        android:layout_below="@+id/numberOfHumansCons"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/numberOfRobotsCons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/numberOfRobotsCons"
+        android:layout_below="@+id/numberOfHumans"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/numberOfRobots" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/officialGreeting"
+        android:textSize="15sp"
+        android:layout_below="@+id/numberOfRobotsCons"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/officialGreetingCons" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_below="@+id/numberOfRobots"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/officialGreeting" />
+</RelativeLayout>
