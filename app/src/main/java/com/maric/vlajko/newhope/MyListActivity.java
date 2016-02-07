@@ -3,6 +3,8 @@ package com.maric.vlajko.newhope;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.res.Resources;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +24,7 @@ import java.util.Arrays;
 
 public class MyListActivity extends Activity {
     ImageView planetPositionImage;
+    RelativeLayout dialogBackground;
     ListView myListView;
     private Dialog dialog;
     private TextView title;
@@ -51,7 +55,6 @@ public class MyListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_list);
         myListView = (ListView)findViewById(R.id.myListView);
-       // planetList = new ArrayList<>(Arrays.asList("Merkur","Venera","Zemlja","Mars","Jupiter","Saturn","Uran","Neptun","Pluton"));
         arrayAdapter = new PlanetsAdapter(getApplicationContext(),R.layout.planet_row,myPlanets);
         planetPositionImage = (ImageView)findViewById(R.id.planetPosition);
         createDialog();
@@ -67,6 +70,10 @@ public class MyListActivity extends Activity {
                 if (position==2){
                     title.setText(getApplicationContext().getResources().getString(R.string.planetHome));
                 }else{title.setText(getApplicationContext().getResources().getString(R.string.planetLocation));}
+                if(position==8){
+                    dialogBackground.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPlutoSad));
+                    }else{ dialogBackground.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorGrayDark));
+                }
                 dialog.show();
             }
         });
@@ -75,6 +82,7 @@ public class MyListActivity extends Activity {
         dialog = new Dialog(MyListActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_layout);
+        dialogBackground = (RelativeLayout)dialog.findViewById(R.id.dialogLayout);
         title = (TextView)dialog.findViewById(R.id.title);
         dialog.setCancelable(true);
     }

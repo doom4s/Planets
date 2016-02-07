@@ -40,13 +40,13 @@ public class PlanetsAdapter extends ArrayAdapter<MyPlanet> {
             row = inflater.inflate(mResourceId, parent, false);
             holder = new PlaceHolder();
 
-            holder.planetName = (TextView) row.findViewById(R.id.planetNameText);;
-            holder.planetDistance = (TextView) row.findViewById(R.id.distance);;
-            holder.planetDiameter = (TextView) row.findViewById(R.id.diameter);;
-            holder.noOfHumans = (TextView) row.findViewById(R.id.numberOfHumans);;
-            holder.noOfRobots = (TextView) row.findViewById(R.id.numberOfRobots);;
-            holder.offGreeting = (TextView) row.findViewById(R.id.officialGreeting);;
-            holder.planetImage = (ImageView)row.findViewById(R.id.myPlanetImage);;
+            holder.planetName = (TextView) row.findViewById(R.id.planetNameText);
+            holder.planetDistance = (TextView) row.findViewById(R.id.distance);
+            holder.planetDiameter = (TextView) row.findViewById(R.id.diameter);
+            holder.noOfHumans = (TextView) row.findViewById(R.id.numberOfHumans);
+            holder.noOfRobots = (TextView) row.findViewById(R.id.numberOfRobots);
+            holder.offGreeting = (TextView) row.findViewById(R.id.officialGreeting);
+            holder.planetImage = (ImageView)row.findViewById(R.id.myPlanetImage);
 
             row.setTag(holder);
         }else {
