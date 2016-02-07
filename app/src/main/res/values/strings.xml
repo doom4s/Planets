@@ -9,4 +9,7 @@
     <string name="greetingText">Why stay ?</string>
     <string name="imageShootingStartDesc">Shooting star</string>
     <string name="planetImage">Planet image</string>
+    <string name="okButton">Ok</string>
+    <string name="planetLocation">To find me just look up ...</string>
+    <string name="planetHome">I found you.</string>
 </resources>

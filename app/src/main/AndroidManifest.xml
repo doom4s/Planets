@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyListActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
